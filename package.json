@@ -1,0 +1,23 @@
+{
+    "name": "hapi_api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Setthasit Thungkawee",
+    "license": "MIT",
+    "scripts": {
+        "dev": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"yarn run compile:run\"",
+        "compile": "tsc",
+        "compile:run": "tsc && node ./dist/index.js",
+        "start": "node ./dist/index.js"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.4",
+        "typescript": "^3.6.4"
+    },
+    "dependencies": {
+        "@types/dotenv": "^8.2.0",
+        "@types/hapi": "^18.0.2",
+        "@types/node": "^12.12.5",
+        "hapi": "^18.1.0"
+    }
+}
